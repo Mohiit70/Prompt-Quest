@@ -7,6 +7,9 @@
 
 body {
   font-family: Arial, sans-serif;
+  min-height: 100vh; /* Set a minimum height of 100vh to the body */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Set a max width for the container and center it horizontally */
@@ -14,6 +17,8 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  flex: 1; /* Allow the container to take up the remaining space */
+  min-height: 400px; /* Set a minimum height for the container */
 }
 
 /* Style the category boxes */
@@ -39,9 +44,11 @@ body {
 /* Style the footer */
 footer {
   background-color: #f2f2f2;
-  margin-top: 20px;
   padding: 10px;
   text-align: center;
+  position: fixed; /* Set the footer to have a fixed position */
+  bottom: 0; /* Stick the footer to the bottom of the page */
+  width: 100%; /* Set the footer to be the full width of the page */
 }
 
 footer p {
