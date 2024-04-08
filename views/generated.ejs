@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Image</title>
+    <link rel="stylesheet" href="/public/images/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generated Image</h1>
+        <img src="/images/<%= imageFilename %>" alt="Generated Image">
+
+        <form method="POST" action="/compare">
+            <input type="hidden" name="category" value="<%= category %>">
+            <input type="text" name="userPrompt" placeholder="Enter prompt for similar image">
+            <br>
+            <input type="submit" value="Compare">
+        </form>
+    </div>
+</body>
+</html>
