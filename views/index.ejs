@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>EZG</title>
-    <link rel="stylesheet" href="/public/images/css/styles.css">
+    <title>EZG Game</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>EZG</h1>
+        <h1>Welcome to EZG Game</h1>
         <form method="POST" action="/generate">
-            <select name="category">
+            <label for="category">Select a category:</label>
+            <select name="category" id="category">
                 <option value="car">Car</option>
                 <option value="place">Place</option>
                 <option value="food">Food</option>

@@ -1,0 +1,33 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
