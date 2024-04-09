@@ -1,4 +1,3 @@
-/* Reset default styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,15 +6,16 @@
 
 body {
   font-family: Arial, sans-serif;
-  min-height: 100vh; /* Set a minimum height of 100vh to the body */
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
 }
 
-/* Set a max width for the container and center it horizontally */
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px;
   padding: 20px;
   flex: 1; /* Allow the container to take up the remaining space */
   min-height: 400px; /* Set a minimum height for the container */
@@ -37,8 +37,9 @@ body {
   cursor: pointer;
   font-size: 16px;
   margin-bottom: 10px;
-  padding: 10px 20px;
-  width: calc(25% - 10px); /* Subtract 10px for margin */
+  padding: 20px; /* Increase padding for larger box size */
+  width: calc(25% - 20px); /* Subtract 20px for margin */
+  text-align: center;
 }
 
 /* Style the footer */
@@ -65,10 +66,9 @@ footer p {
 /* Media queries for different screen sizes */
 @media screen and (max-width: 768px) {
   .category-boxes button {
-    width: calc(50% - 10px); /* Subtract 10px for margin */
+    width: calc(50% - 20px); /* Subtract 20px for margin */
   }
 }
-
 @media screen and (max-width: 480px) {
   .category-boxes button {
     width: 100%;
